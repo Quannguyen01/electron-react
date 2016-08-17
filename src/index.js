@@ -1,13 +1,16 @@
-import React, { Component } from 'react';
+import React from 'react';
 import ReactDom from 'react-dom';
 
-class App extends Component {
-  render(){
-    return <h1>Hello from React!</h1>;
-  }
-}
+import App from './component/app';
 
 ReactDom.render(
   <App/>,
   document.getElementById('app')
 )
+
+if (module.hot) {
+    module.hot.accept('./component/app', function(){
+        let newApp = require('./component/app').default;
+        render(newApp);
+    });
+}
