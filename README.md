@@ -125,4 +125,4 @@ module.exports = config;
   <script src="./dist/index_bundle.js"></script>
 </body>
   ```
-  Now if you run `npm run start` it will give you the same result, but now JSX is not trans-piled at runtime anymore. But we are not done yet. It will be much nicer if Electron can automatically refresh whenever we update our component.
+  Now if you run `npm run start` it will give you the same result, but now JSX is not trans-piled at runtime anymore. But we are not done yet. It will be much nicer if Electron can automatically refresh whenever we update our components.
