@@ -109,7 +109,7 @@ var config = {
 module.exports = config;
   ```
 
-  Details on what's on a webpack config file can be found [here](http://webpack.github.io/docs/tutorials/getting-started/). The gist of the config file is that it starts `index.js` file, get all of its dependencies and then combine all of them into `index_bundle.js` which is stored in a `dist` folder. The loader for all `js` file trans-piles all JSX and ES2015 to common JavaScript in `index_bundle.js`.
+  Details on what's on a webpack config file can be found [here](http://webpack.github.io/docs/tutorials/getting-started/). The gist of the config file is that it starts at `index.js` file, get all of its dependencies and then combine all of them into `index_bundle.js` which is stored in a `dist` folder. The loader for all `js` file trans-piles all JSX and ES2015 to common JavaScript in `index_bundle.js`.
 
   We need to add bundle command `webpack -p` into `package.json`:
   ```json
